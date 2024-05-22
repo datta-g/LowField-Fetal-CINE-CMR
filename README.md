@@ -1,4 +1,4 @@
-# Low Field Fetal CINE Cardiac-MRI
+# Low Field Fetal CINE Cardiac MRI
 CINE fetal CMR at 0.55T Reconstruction with motion-correction and cardiac gating
 
 # Description
