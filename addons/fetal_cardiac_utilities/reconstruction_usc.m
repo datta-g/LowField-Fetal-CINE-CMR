@@ -89,7 +89,7 @@ clearvars -except Data para
 
 %% conjugate gradient reconstruction (STCR == spatiotemporal constrained reconstruction)
 [Image_recon, para] = STCR_conjugate_gradient(Data, para);
-%% rotate, crop image
+%% crop image
 Image_recon = abs(Image_recon);
 Image_recon = crop_half_FOV(Image_recon, para.Recon.matrix_size);
 end

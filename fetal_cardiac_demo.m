@@ -32,7 +32,7 @@ frametimes = compute_rt_times(acq_time_vec, para, size(fetalRT_recon,3));
 fetalRT_recon_moco = CINE_Tool_Correct_RT(fetalRT_recon,-myTransforms,0);
 
 % computing RR intervals for fetal data
-[MOGwaves, MI] = MOG_MODULE_MASK(abs(fetalRT_recon_moco),frametimes, Mask,para.MOG.ncardphases,(indx(end)-1)*TR);
+[MOGwaves, MI] = MOG_MODULE_MASK(abs(fetalRT_recon_moco),frametimes, Mask,para.MOG.ncardphases,frametimes(end));
 
 
 %% CINE RUN

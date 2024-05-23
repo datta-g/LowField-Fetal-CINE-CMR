@@ -113,5 +113,7 @@ clearvars -except Data para
 %% conjugate gradient reconstruction
 [Image_recon, ~] = STCR_conjugate_gradient(Data, para);
 
-
+%% crop image
+Image_recon = abs(Image_recon);
+Image_recon = crop_half_FOV(Image_recon, para.Recon.matrix_size);
 end
