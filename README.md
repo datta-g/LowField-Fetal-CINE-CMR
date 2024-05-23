@@ -20,17 +20,18 @@ In MATLAB, download repository manually or by using:
 ```
 All required repositories will be merged and installed.
 
-# File structure
-LowField-Fetal-CINE-CMR/
-    │── install.m
-    │── setpath_cine.m
-    │── fetal_cardiac_demo.m
-    │── addons/
-    │    ├── fetal_cardiac_utilities/
-    └── testdata/
-         ├── raw/
-         ├── sample_results/
-         
+# Directory Structure
+
+    LowField-Fetal-CINE-CMR/                           Main directory
+     │── install.m                                     Installation script
+     │── setpath_cine.m                                Path manager for running reconstruction 
+     │── fetal_cardiac_demo.m                          Brief demo script to run reconstruction
+     │── addons/                                       Main dependencies directory
+     │    ├── fetal_cardiac_utilities/                 Fetal specific depedencies
+     └── testdata/                                     Directory with data for testing
+          ├── test_fetal_data.mat                      Acquired fetal SSFP data
+
+
 # Usage
 A brief demo script (fetal_cardiac_demo.m) is provided with sample test data. In this script, real-times are reconstructed. Motion correction and metric optimised gating a re performed. A cine reconstruction is then performed. 
 ```sh
