@@ -22,6 +22,6 @@ All required repositories will be merged and installed.
 
 # Usage
 A brief demo script (fetal_cardiac_demo.m) is provided with sample test data. In this script, real-times are reconstructed. Motion correction and metric optimised gating a re performed. A cine reconstruction is then performed. 
-'''sh
+```sh
  run fetal_cardiac_demo.m
-'''
+```
