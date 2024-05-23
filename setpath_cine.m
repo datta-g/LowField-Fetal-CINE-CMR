@@ -6,7 +6,7 @@
 
 
 ADDONS = [pwd filesep 'addons'];
-addpath(genpath(ADDONS))
+addpath(genpath(ADDONS));
 
 % remove certain files from path for no confusion
 MFILPATH=[pwd filesep 'addons' filesep 'spiral_aliasing_reduction' filesep 'mfile'];

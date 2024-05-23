@@ -4,8 +4,7 @@
 % datta.goolaub@sickkids.ca
 % SickKids, Translational Medicine
 
-clear
-clc
+clear; clc;
 
 % check version and issue warnings
 if verLessThan('matlab','9.7')
