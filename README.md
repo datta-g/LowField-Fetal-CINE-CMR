@@ -14,7 +14,7 @@ The code was been tested on MATLAB R2019b 9.7.0.1296695 Update 4. Some functions
 # Installation
 In MATLAB, download repository manually or by using:
 ```sh
- !git clone https://github.com/datta-g/Low-Field-Fetal-Cardiac-MRI.git
+ !git clone https://github.com/datta-g/LowField-Fetal-CINE-CMR.git
  cd LowField-Fetal-CINE-CMR
  run install.m
 ```
