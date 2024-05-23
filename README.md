@@ -12,10 +12,12 @@ Please cite the following paper, if you are using this code:
 The code was been tested on MATLAB R2019b 9.7.0.1296695 Update 4. Some functions are incompatible with older versions. 
 
 # Installation
-Download repository manually or by using:
-git clone https://github.com/datta-g/Low-Field-Fetal-Cardiac-MRI.git
+In MATLAB, download repository manually or by using:
++!git clone https://github.com/datta-g/Low-Field-Fetal-Cardiac-MRI.git
++cd LowField-Fetal-CINE-CMR
++run install.m
 
-In MATLAB, run the install.m script. This script will merge and install other required repositories.
+All required repositories will be merged and installed.
 
 # Usage
 A brief demo script (fetal_cardiac_demo.m) is provided with sample test data. In this script, real-times are reconstructed. Motion correction and metric optimised gating a re performed. A cine reconstruction is then performed. 
