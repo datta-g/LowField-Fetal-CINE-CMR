@@ -10,7 +10,7 @@
 % OUTPUTS:
 %           reconstructed CINE in fetalCardiacCINE
 %           
-% NOTES:
+% NOTES: 
 %           
 %
 % Datta Singh Goolaub, 2024

@@ -26,7 +26,7 @@ if verLessThan('matlab','9.7')
     fprintf('          If some features are not working, upgrade to version 9.7 and above.\n')
 end
 
-%get main location
+%get main location for rootdir
 LOWFIELCINEPATH = pwd;
 cd('addons')
 
