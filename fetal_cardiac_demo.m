@@ -1,4 +1,23 @@
-% set paths
+% NAME :  
+%           fetal_cardiac_demo
+% 
+% DESCRIPTION:
+%           This script sets runs a brief demo CINE reconstruction of 
+%           low field fetal spiral SSFP acquisition
+% INPUTS:
+%           - 
+%
+% OUTPUTS:
+%           reconstructed CINE in fetalCardiacCINE
+%           
+% NOTES:
+%           
+%
+% Datta Singh Goolaub, 2024
+% datta.goolaub@sickkids.ca
+% SickKids, Translational Medicine
+
+%% path modification
 setpath_cine;
 clear; clc;
 

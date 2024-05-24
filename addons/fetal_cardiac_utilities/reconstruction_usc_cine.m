@@ -1,4 +1,23 @@
 function [Image_recon] = reconstruction_usc_cine(kdata, kloc, w, para,CP, myTransforms, MI)
+%--------------------------------------------------------------------------
+%   Image_recon = reconstruction(para)
+%--------------------------------------------------------------------------
+%   Main reconstruction function used in MRM-20-21688, to reproduce no
+%   correction, ES correction, and LF reconstruction for a dataset
+%   corresponding to Figure 3. 
+%--------------------------------------------------------------------------
+%   Please cite this paper if you use this code:
+%       [1]     Aliasing Artifact Reduction for Spiral Real-Time MRI. MRM,
+%               20.21688
+%--------------------------------------------------------------------------
+%   Author:
+%       Ye Tian
+%       E-mail: phye1988@gmail.com
+%
+%   Copyright:
+%       MREL, 2020
+%       https://mrel.usc.edu
+%--------------------------------------------------------------------------
 %   adapted from:
 %               Aliasing Artifact Reduction for Spiral Real-Time MRI. MRM,
 %               20.21688
@@ -18,7 +37,6 @@ para.Recon.image_size  = round(matrix_size * para.Recon.FOV);
 
 %% fix dimensions for kspace, kx and ky
 scale_factor = 1e3 * prod(para.Recon.image_size) / max(abs(kdata(:)));
-% kSpace = single(permute(kdata,[1, 3, 2])) * scale_factor;
 kSpace = single(kdata) * scale_factor;
 
 % correct image orintation (90 degree roation)
@@ -49,7 +67,6 @@ rSpokes=max(sum(squeeze(W(1,:,:))>max(W(:))/2)); % Sort spokes according to weig
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 kmx=zeros(size(kSpace,1),rSpokes,rFrames,'single'); %Initialize variable
 kmy = kmx;
-%     wMOG = kMOG;
 param.y=zeros(size(kSpace,1),rSpokes,size(kSpace,3),rFrames,'single'); %Initialize variable
 for iFrame=1:rFrames
     param.y(:,:,:,iFrame)=bsxfun(@times,bsxfun(@times,kSpace(:,SpokeIndices(1:rSpokes,iFrame),:),MOCO(:,SpokeIndices(1:rSpokes,iFrame))),W(:,SpokeIndices(1:rSpokes,iFrame),iFrame));
@@ -69,8 +86,6 @@ for iFrame=1:rFrames
             kmy(:,nspoke,iFrame) = ktmp(2,:)';
         end
     end
-    
-    %         wMOG(:,:,iFrame)=w(:,SpokeIndices(1:rSpokes,iFrame));
 end
 
 

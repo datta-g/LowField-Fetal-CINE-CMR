@@ -1,8 +1,22 @@
-% This script downloads the additional required code.
+% NAME :  
+%           install
+% 
+% DESCRIPTION:
+%           This script downloads the additional required code.
+% INPUTS:
+%           - 
+%
+% OUTPUTS:
+%           adds new packages to pipeline rootdir/addons
+%           
+% NOTES:
+%           
 %
 % Datta Singh Goolaub, 2024
 % datta.goolaub@sickkids.ca
 % SickKids, Translational Medicine
+
+%% installation initiation
 
 clear; clc;
 

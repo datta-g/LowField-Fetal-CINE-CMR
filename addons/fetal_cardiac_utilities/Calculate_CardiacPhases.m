@@ -1,3 +1,22 @@
+% NAME :  
+%           Calculate_CardiacPhases (Times,RWaveTimes)
+% 
+% DESCRIPTION:
+%           Computes cardiac phases of timestamps based on heart rate model   
+% INPUTS:
+%           Times               timestamps [ms]
+%           RWaveTimes          timestamps for cardiac beat [ms]
+%
+% OUTPUTS:
+%           CP                  cardiac phase for each entity with timestamps Times
+%           
+% NOTES:
+%           
+%
+%
+% Original code Christopher Roy 2018
+% modifications by Datta Goolaub 2020
+
 function CP=Calculate_CardiacPhases(Times,RWaveTimes)
 
 while RWaveTimes(end)<max(Times(:))

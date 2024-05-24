@@ -1,9 +1,22 @@
-% This script sets paths for the required code.
+% NAME :  
+%           setpath_cine
+% 
+% DESCRIPTION:
+%           This script sets paths for the required code.
+% INPUTS:
+%           - 
+%
+% OUTPUTS:
+%           alters MATLAB path
+%           
+% NOTES:
+%           
 %
 % Datta Singh Goolaub, 2024
 % datta.goolaub@sickkids.ca
 % SickKids, Translational Medicine
 
+%% path modification
 
 ADDONS = [pwd filesep 'addons'];
 addpath(genpath(ADDONS));
