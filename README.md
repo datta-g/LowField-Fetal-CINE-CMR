@@ -9,7 +9,8 @@ Please cite the following paper, if you are using this code:
 [1] PLACEHOLDER
 
 # Requirements
-The code was been tested on MATLAB R2019b 9.7.0.1296695 Update 4. Some functions are incompatible with older versions. For MEX-file compilation, a compatible compiler is required (https://www.mathworks.com/support/requirements/supported-compilers.html).
+The code was been tested on MATLAB R2019b 9.7.0.1296695 Update 4. Some functions are incompatible with older versions. 
+For MEX-file compilation, a compatible compiler is required (https://www.mathworks.com/support/requirements/supported-compilers.html).
 
 # Installation
 In MATLAB, download repository manually or by using:
