@@ -5,6 +5,7 @@ CINE fetal CMR at 0.55T Reconstruction with motion-correction and cardiac gating
 This repository contains code to reconstruct CINE fetal CMR at 0.55T at multiple spatial resolutions. First, real-time images are reconstructed for motion-correction and cardiac gating. Fetal cardiac CINEs are then reconstructed using the corrected data. 
 
 # Citation
+Submitted to Journal of Cardiovascular Magnetic Resonance (24 September 2024)
 Please cite the following paper, if you are using this code: <br />
 [1] PLACEHOLDER
 
