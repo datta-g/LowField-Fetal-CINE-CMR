@@ -5,7 +5,7 @@ function [myTransforms, MI] = MOCO_MODULE_MASK(RT,t,Mask, rotationflag)
 
 nMask =CINE_Tool_Enlarge_IRREGULAR_ROI(Mask);% % create an ROI of roughly 1/2 the field-of-view centered on the heart
 
-AVGFrames=round(range(t)/400); % Calculate the number of frames needed for motion correction of the real time images (temporal resolution here set to 200 somewhat arbitrarily)
+AVGFrames=round(range(t)/400); % Calculate the number of frames needed for motion correction of the real time images (temporal resolution here set to 400 somewhat arbitrarily)
 
 RTAVG=CINE_Tool_Temporal_Averaging(RT,AVGFrames); % Average real-time frames to achieve the temporal resolution described in the previous line
 
