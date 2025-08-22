@@ -7,7 +7,8 @@ This repository contains code to reconstruct CINE fetal CMR at 0.55T at multiple
 # Citation
 Submitted to Journal of Cardiovascular Magnetic Resonance (24 September 2024) <br />
 Please cite the following paper, if you are using this code: <br />
-[1] Goolaub, D. S., Tian, Y., van Amerom, J. F., Wood, J., Detterich, J., Nayak, K. S., & Macgowan, C. K. (2025). _Multiresolution comparison of fetal real-time and cine magnetic resonance imaging at 0.55 T_. Journal of Cardiovascular Magnetic Resonance, 27(1), 101856. (https://doi.org/10.1016/j.jocmr.2025.101856)
+[1] Goolaub, D. S., Tian, Y., van Amerom, J. F., Wood, J., Detterich, J., Nayak, K. S., & Macgowan, C. K. (2025). _Multiresolution comparison of fetal real-time and cine magnetic resonance imaging at 0.55 T_. Journal of Cardiovascular Magnetic Resonance, 27(1), 101856. 
+(https://doi.org/10.1016/j.jocmr.2025.101856)
 
 # Requirements
 The code was been tested on MATLAB R2019b 9.7.0.1296695 Update 4. Some functions are incompatible with older versions. <br />
